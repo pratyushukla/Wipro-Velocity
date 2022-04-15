@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details Form</title>
+    <style>
+      body {
+        min-height: 100vh;
+        background-image: linear-gradient(
+          rgba(12, 11, 83, 0.699),
+          rgba(4, 224, 253, 0.815)
+        );
+      }
+      .info {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: larger;
+        text-align: center;
+        color: white;
+      }
+      input,
+      textarea {
+        min-width: 400px;
+        padding: 10px;
+      }
+      #btn {
+        padding: 10px;
+        background-color: darkgray;
+        font-weight: 600;
+        font-size: medium;
+        color: white;
+        border-radius: 5px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      #btn:hover {
+        background-color: blueviolet;
+        color: white;
+        padding: 13px;
+      }
+      #result {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        max-width: 400px;
+        margin: auto;
+      }
+      #outer {
+        min-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="info">
+      <div>
+        <h2>Submit Details</h2>
+        <div>
+          <input
+            id="name"
+            class="fname"
+            type="text"
+            name="name"
+            placeholder="Full name"
+          /><br />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email"
+          /><br />
+          <input
+            type="text"
+            id="phno"
+            name="phno"
+            placeholder="Phone number"
+          /><br />
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Location"
+          /><br />
+        </div>
+        <p>Leave a message</p>
+        <div>
+          <textarea id="message" rows="4"></textarea>
+        </div>
+        <button id="btn" onclick="send()">Submit</button>
+      </div>
+    </div>
+    <div id="outer"></div>
+    <script>
+      function send() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phno = document.getElementById("phno").value;
+        var address = document.getElementById("address").value;
+        var message = document.getElementById("message").value;
+        var data =
+          '<div style="text-align: center" id="result"><p>Name: ' +
+          name +
+          "</p><p>Email: " +
+          email +
+          "</p><p>Phone Number: " +
+          phno +
+          "</p><p>Address: " +
+          address +
+          "</p><p>Message: " +
+          message +
+          "</p></div>";
+        document.getElementById("outer").innerHTML = data;
+      }
+    </script>
+  </body>
+</html>

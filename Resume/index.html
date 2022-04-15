@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Resume</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <table class="center" cellspacing="10">
+      <tr>
+        <td>
+          <img
+            class="img"
+            style="border-radius: 10%"
+            src="images/profile_pic.jpg"
+            alt="Pratyush profile pic"
+            onclick="newpage()"
+          />
+        </td>
+        <td>
+          <h1>Pratyush Shukla</h1>
+          <p><em>Final Year CSE Undergrad.</em></p>
+        </td>
+      </tr>
+    </table>
+    <p class="desc">
+      <em>
+        I'm a final year computer science student at
+        <a href="http://www.mckvie.edu.in/">MCKVIE</a>
+        with interest in Software Development and Web Development. I love
+        playing chess and reading books.
+      </em>
+    </p>
+    <hr />
+    <h3>Education</h3>
+    <table class="center table">
+      <tr>
+        <th>Institute</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>Sacred Heart High School</td>
+        <td>x8%</td>
+      </tr>
+      <tr>
+        <td>Imperial Public School(HS)</td>
+        <td>y0%</td>
+      </tr>
+      <tr>
+        <td>MCKV Institute of Engineering</td>
+        <td>z CGPA</td>
+      </tr>
+    </table>
+    <hr />
+    <h3>Work Experience</h3>
+    <table class="center table" cellspacing="10">
+      <thead>
+        <tr>
+          <th>Dates</th>
+          <th>Work</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>2022-present</td>
+        <td>Wipro Salesforce Training</td>
+      </tr>
+    </table>
+    <hr />
+    <h3 onclick="showSkills()">SKILLS</h3>
+    <div id="skills"></div>
+    <hr />
+
+    <table class="center" cellspacing="10" width="100%">
+      <tr>
+        <td>
+          <button
+            class="btn"
+            onclick="window.open('https://www.linkedin.com/in/pratyushukla/','_blank');"
+          >
+            Check out my LinkedIn profile!
+          </button>
+        </td>
+        <td>
+          <button
+            class="btn"
+            onclick="window.open('https://github.com/pratyushukla','_blank');"
+          >
+            Checkout my Github profile!
+          </button>
+        </td>
+        <td>
+          <button class="btn" onclick="window.open('form.html','_blank');">
+            Submit your details!
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
