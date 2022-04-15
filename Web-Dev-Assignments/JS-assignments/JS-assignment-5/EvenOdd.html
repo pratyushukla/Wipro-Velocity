@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="dis" class="mx-auto w-50 text-center"></p>
+    <script>
+      let a = Number(new Date().getMinutes());
+      if (a % 2 == 0) {
+        document.getElementById(
+          "dis"
+        ).innerHTML += `<p class="p-3 m-1 bg-primary text-light rounded-3">EVEN</p>`;
+      } else if (a < 5) {
+        document.getElementById(
+          "dis"
+        ).innerHTML += `<p class="p-3 m-1 bg-danger text-light rounded-3">Oh!Less Than 5</p>`;
+      } else {
+        document.getElementById(
+          "dis"
+        ).innerHTML += `<p class="p-3 m-1 bg-warning text-dark rounded-3">ODD</p>`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 15px;
+      }
+      div {
+        border: #000 solid 3px;
+        padding: 3% 3%;
+        text-align: center;
+        border-radius: 15px;
+        background-color: powderblue;
+      }
+      #demo {
+        padding: 10px;
+        border-radius: 5px;
+        margin: 2px;
+      }
+      #reverse {
+        text-align: center;
+        background-color: white;
+        margin: 2% 40%;
+        border-radius: 5px;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Program for Switch</h1>
+      <p>Display using switch</p>
+      <p id="demo"></p>
+    </div>
+    <script>
+      let char = prompt("Type either + or * or $");
+      switch (char) {
+        case "+":
+          char = "+";
+          break;
+        case "*":
+          char = "*";
+          break;
+        case "$":
+          char = "$";
+          break;
+      }
+      document.getElementById("demo").innerHTML = "char typed is :" + char;
+    </script>
+  </body>
+</html>

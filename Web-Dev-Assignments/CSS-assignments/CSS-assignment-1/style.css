@@ -1,0 +1,18 @@
+body {
+  background-color: aquamarine;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text {
+  text-align: center;
+  background-color: bisque;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-style: dashed;
+}
+
+.image {
+  text-align: center;
+  background-color: bisque;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-style: double;
+}

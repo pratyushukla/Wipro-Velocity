@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #fade_out {
+        position: relative;
+        height: 100%;
+        width: auto;
+        margin: 0 auto;
+      }
+
+      #fade_out img {
+        position: absolute;
+        left: 0;
+        -webkit-transition: opacity 2s linear;
+        -moz-transition: opacity 2s linear;
+        transition: opacity 2s linear;
+      }
+
+      #fade_out img.top:hover {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="myImage"
+      onclick="changeImage()"
+      src="pic_bulboff.gif"
+      width="100"
+      height="180"
+    />
+
+    <p>Click the light bulb to turn on/off the light.</p>
+
+    <script>
+      function changeImage() {
+        var image = document.getElementById("myImage");
+        if (image.src.match("bulboff")) {
+          image.src = "pic_bulbon.gif";
+        } else {
+          image.src = "pic_bulboff.gif";
+        }
+      }
+      console.log(1 + 2);
+    </script>
+    <br />
+    <div id="fade_out">
+      <p>Hover over the image to check the effect.</p>
+      <img class="bottom" src="pic_bulbon.gif" />
+      <img class="top" src="pic_bulboff.gif" />
+    </div>
+  </body>
+</html>

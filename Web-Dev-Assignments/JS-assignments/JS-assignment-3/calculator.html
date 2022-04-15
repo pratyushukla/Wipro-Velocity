@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>JSdemo</title>
+    <style>
+      body {
+        background-color: powderblue;
+      }
+    </style>
+
+    <script>
+      function add() {
+        var numOne, numTwo, sum;
+        numOne = parseInt(document.getElementById("first").value);
+        numTwo = parseInt(document.getElementById("second").value);
+        sum = numOne + numTwo;
+        document.getElementById("sum").value = sum;
+      }
+      function multiply() {
+        var numOne, numTwo, product;
+        numOne = parseInt(document.getElementById("first").value);
+        numTwo = parseInt(document.getElementById("second").value);
+        product = numOne * numTwo;
+        document.getElementById("pro").value = product;
+      }
+      function difference() {
+        var numOne, numTwo, diff;
+        numOne = parseInt(document.getElementById("first").value);
+        numTwo = parseInt(document.getElementById("second").value);
+        diff = numOne - numTwo;
+        document.getElementById("diff").value = diff;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>My name is Pratyush and this is a simple calculator!</h1>
+    <br />
+
+    <p>Enter the First Number: <input id="first" /></p>
+    <p>Enter the Second Number: <input id="second" /></p>
+
+    <button onclick="add()">Add</button>
+    <p>Sum = <input id="sum" /></p>
+
+    <button onclick="multiply()">Multiply</button>
+    <p>Product = <input id="pro" /></p>
+
+    <button onclick="difference()">Subtract</button>
+    <p>Difference = <input id="diff" /></p>
+
+    <h1><a href="bulb.html">Click here to switch on a light bulb!</a></h1>
+  </body>
+</html>

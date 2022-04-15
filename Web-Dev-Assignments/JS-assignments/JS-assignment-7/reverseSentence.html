@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 15px;
+      }
+      #div {
+        border: #000 solid 3px;
+        padding: 3% 3%;
+        text-align: center;
+        border-radius: 15px;
+        background-color: powderblue;
+      }
+      #demo {
+        padding: 10px;
+        border-radius: 5px;
+        margin: 2px;
+      }
+      #reverse {
+        text-align: center;
+        background-color: white;
+        margin: 2% 40%;
+        border-radius: 5px;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div">
+      <h2>Reverse a Sentence</h2>
+      <label for="text">Enter the text to be reversed : </label><br /><br />
+      <input type="text" name="text" id="demo" /><br />
+      <button id="demo" onclick="reverseString()" placeholder="Enter Text!">
+        Click to Reverse!
+      </button>
+      <p id="reverse"></p>
+    </div>
+    <script>
+      function reverseString() {
+        const str = document.getElementById("demo").value;
+        let newString = "";
+        for (let i = str.length - 1; i >= 0; i--) {
+          newString += str[i];
+        }
+        document.getElementById("reverse").innerHTML = newString;
+      }
+    </script>
+  </body>
+</html>

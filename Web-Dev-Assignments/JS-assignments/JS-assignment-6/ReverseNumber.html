@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Javascript Demo</h3>
+    <p>Demo of a string and number concatenation</p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <br />
+    <input type="button" onclick="rev()" value="Display Reverse" />
+    <p id="demo3"></p>
+
+    <script>
+      let name = "Pratyush Shukla";
+      let message = "likes web development";
+      document.getElementById("demo").innerHTML = name + " " + message;
+
+      const nameArr = ["Pratyush", "Jit", "JonSnow"];
+      document.getElementById("demo2").innerHTML =
+        "The element at 2nd index is " + nameArr[2];
+
+      function rev() {
+        let rev = 0;
+        let num = 347895;
+        let lastDigit;
+        while (num != 0) {
+          lastDigit = num % 10;
+          rev = rev * 10 + lastDigit;
+          num = Math.floor(num / 10);
+        }
+        document.getElementById("demo3").innerHTML = "The reverse is " + rev;
+      }
+    </script>
+  </body>
+</html>
